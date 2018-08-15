@@ -37,7 +37,7 @@ a:hover{
 }
 
 .container{
-	padding:0 8%;
+	padding:0 4rem;
 }
 
 /* loginPage css */
@@ -66,7 +66,7 @@ a:hover{
 
 .login_main{
 	width:100%;
-	padding:1.5rem;
+	padding:1.5rem 0;
 }
 
 input{
