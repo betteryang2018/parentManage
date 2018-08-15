@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>    
+	<meta name="format-detection" content="telephone=no" /> 
+	<meta http-equiv="Cache-Control" content="no-siteapp"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<meta name="apple-mobile-web-app-title" content="标题名称">
+	<title>登入首页</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/parentManage.css">
+</head>
+<body>
+	<header class="login_header">
+		<div class="container">
+			<a class="logo" href="#"><img src="images/logo.png"></a>
+			<h5>学生平板家长管理端</h5>
+		</div>
+	</header>
+	<section class="login_main">
+		<div class="container">
+			<div class="telIntBox">
+				<label class="telIntLab" for="telInt"><img src="images/loginTel.png"></label>
+				<input id="telInt" class="telInt" placeholder="手机号码" type="tel" />
+			</div>
+			<div class="pswIntBox">
+				<lable class="pswIntLab" for="pswInt"><img src="images/loginPsw.png"></lable>
+				<input id="pswInt" class="pswInt" placeholder="密码" type="password" />
+			</div>
+			<div class="tipsLink">
+				<a class="userRegist" href="#">新用户注册</a>
+				<a class="forgetPsw" href="#">忘记密码?</a>
+			</div>
+			<button class="loginBtn clear" type="submit">立即登入</button>
+		</div>
+	</section>
+<script src="js/jquery-3.2.1.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
