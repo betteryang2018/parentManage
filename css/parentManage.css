@@ -3,11 +3,23 @@ html{
 	font-size: 100px;  /* 设置100px=1rem */
 } 
 
-@media(min-width: 1200px){
-	html{
-		font-size: 110px;
-	}
-} 
+@media screen and (min-width: 320px){
+  html{
+    font-size: 90px;
+  }
+}
+
+@media screen and (min-width: 375px){
+  html{
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 414px){
+  html{
+    font-size: 110px;
+  }
+}
 
 body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,i{
 	margin:0;
@@ -44,6 +56,15 @@ img{
 	border:0;
 	max-width: 100%;
 }
+
+.col-xs-3,.col-xs-4,
+.col-sm-3,.col-sm-4,
+.col-md-3,.col-md-4,
+.col-lg-3,.col-lg-4{
+	margin:0;
+	padding:0;
+}
+
 
 /* loginPage css */
 
@@ -182,9 +203,83 @@ input{
 
 .index_proslide img{
 	max-width:100%;
+	height: 60vw;
+}
+
+.index_childInfos{
+	line-height: 0.3rem;
+	border: 0.04rem solid #E5EBEB;
+	border-bottom:0.5rem solid #E5EBEB;
+}
+
+.index_childInfos .container{
+	padding:0.3rem;
 }
 
 .index_childInfos .headPortrait{
-	width:1.21rem;
-	height:1.19rem; 
+	width:0.6rem;
+	height:0.6rem; 
+	float:left;
+	margin-right: 0.1rem;
  }
+
+ .index_childInfos .infoText{
+ 	float:left;
+ 	position: relative;
+ 	top:0.05rem;
+ }
+
+.index_childInfos h4,
+.index_childInfos h5,
+.index_childInfos h6{
+	margin-bottom: 0.05rem;
+}
+
+.index_childInfos h4{
+	font-size: 0.14rem;
+}
+
+.index_childInfos h5{
+	font-size: 0.12rem;
+}
+
+.index_childInfos h6{
+	font-size: 0.1rem;
+	color:#97A8AD;
+ 	max-width: 60vw;
+ 	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.index_childInfos .operate{
+	text-align: center;
+	padding:0.2rem;
+}
+
+.index_childInfos .operate .icon img{
+	width:0.15rem;
+	height: 0.15rem;
+}
+
+.index_childInfos .operate .icon p,
+.index_footer p
+{
+	font-size: 0.1rem;
+	color:#97A8AD;
+}
+
+.index_childInfos .container{
+	padding-bottom: 0.1rem
+}
+
+.index_footer{
+	text-align: center;
+	padding:0.12rem 0;
+} 
+
+.index_footer p{
+	padding-top: 0.075rem;
+}
+
+
