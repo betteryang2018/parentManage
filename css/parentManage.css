@@ -21,6 +21,12 @@ html{
   }
 }
 
+@media screen and (min-width: 414px){
+  html{
+    font-size: 110px;
+  }
+}
+
 body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,img,div,dl,dt,dd,i{
 	margin:0;
 	padding:0;
@@ -146,7 +152,8 @@ input{
     background: #52B7E3;
     border: 1px solid #52B7E3;
     border-radius: 30px;
-    margin-top: 0.8rem;
+    position: relative;
+    top:10vh;
     color: #fff;
     text-decoration: none;
 	font-size: 0.16rem;
@@ -207,7 +214,7 @@ input{
 	height: 60vh;
 	line-height: 0.3rem;
 	background: #E5EBEB;
-	padding:0.04rem 0.04rem 0.3rem;
+	padding:0.06rem 0.06rem 0.3rem;
 	overflow: auto;
 }
 
@@ -221,7 +228,7 @@ input{
 	padding:0.2rem 0.3rem 0; 
 }
 
-.index_childInfos .headPortrait{
+.headPortrait{
 	width:0.6rem;
 	height:0.6rem; 
 	float:left;
@@ -250,6 +257,7 @@ input{
 
 .index_childInfos h6{
 	font-size: 0.1rem;
+	line-height: 0.14rem;
 	color:#97A8AD;
  	max-width: 60vw;
  	overflow: hidden;
@@ -277,11 +285,109 @@ input{
 .index_footer{
 	height: 10vh;
 	text-align: center;
-	padding:0.12rem 0;
+	padding:0.11rem 0 0.13rem;
 } 
 
 .index_footer p{
-	padding-top: 0.075rem;
+	padding-top: 0.065rem;
 }
+
+/*  personalInfos css */
+
+.pslInfo_header{
+	height: 15vh;
+	position: relative;
+	background: #52B7E3;
+	padding:0.2rem 0;
+	color:#fff;
+}
+
+.pslInfo_header .container{
+	padding:0 0.3rem;
+}
+
+.pslInfo_header .icon
+{
+	width:0.1rem;
+	height:0.08rem;
+	position: absolute;
+	top:45%;
+	right:0.45rem;
+}
+
+.pslInfo_header .headTxt{
+	float: left;
+	position: relative;
+	top:0.1rem;
+}
+
+.pslInfo_header .headTxt h4{
+	float: left;
+	line-height: 0.3rem;
+}
+
+.pslInfo_mainCon{
+	height: 75vh;
+	overflow: auto;
+	position: relative;
+	background: #E5EBEB;
+}
+
+.pslInfo_mainCon .icon
+{
+	width:0.1rem;
+	height:0.08rem;
+	position: absolute;
+	right:0.45rem;
+}
+
+.pslInfo_mainCon .pslInfo_box,
+.pslInfo_mainCon .operate_box,
+.pslInfo_mainCon .exitBtn{
+	background: #fff;
+	margin-bottom: 0.03rem;
+}
+
+.pslInfo_mainCon .pslInfo_box{
+	padding-bottom: 0.2rem;
+}
+
+.pslInfo_mainCon dl{
+	width:100%;
+	padding:2vh 0 5vh;
+	border-bottom:0.01rem solid #B2B2B2;
+	font-size: 0.14rem;
+}
+
+.pslInfo_mainCon .homeAdrss,
+.pslInfo_mainCon .addBind{
+	border-bottom:0;
+}
+
+.pslInfo_mainCon .homeAdrss dd{
+	float: left;
+}
+
+.pslInfo_mainCon dt{
+	color:#97A8AD;
+	float:left;
+}
+
+.pslInfo_mainCon dd{
+	float:right;
+}
+
+.pslInfo_mainCon .exitBtn{
+	text-align: center;
+	padding:0.18rem 0;
+}
+
+.pslInfo_mainCon .exitBtn a{
+	color:#FD9162;
+}
+
+
+
+
 
 
