@@ -144,7 +144,7 @@ input{
     font-size: 0.13rem;
 }
 
-.loginBtn, .registBtn{
+.loginBtn, .registBtn, .confirmBtn{
     display: block;
     width: 95%;
     margin: 0 auto;
@@ -156,7 +156,7 @@ input{
     top:10vh;
     color: #fff;
     text-decoration: none;
-	font-size: 0.16rem;
+	font-size: 0.15rem;
 }
 
 /* registPage css */
@@ -394,8 +394,17 @@ input{
 	color:#FD9162;
 }
 
+/* pslInfo_modifyPsw css */
 
+.pslInfo_modifyPsw .confirmBtn{
+	margin-top: 18vh;
+}
 
+/* pslInfo_modifyInfos css */
+
+.pslInfo_modifyInfos .confirmBtn{
+	margin-top: 3vh;
+}
 
 
 

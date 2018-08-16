@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>    
+	<meta name="format-detection" content="telephone=no" /> 
+	<meta http-equiv="Cache-Control" content="no-siteapp"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<meta name="apple-mobile-web-app-title" content="修改密码">
+	<title>修改密码</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/parentManage.css">
+</head>
+<body>
+	<header class="regist_header">
+		<div class="container">
+			<a class="icon returnBtn" href="#"><img src="images/return.png"></a>
+			<h5>修改密码</h5>
+		</div>
+	</header>
+	<section class="regist_main pslInfo_modifyPsw">
+		<div class="container">
+			<form id="registForm" action="registPage_submit" method="get" accept-charset="utf-8">
+				<div class="inputWrap">	
+					<input type="password" id="currentPsw" class="pswInt" placeholder="输入原密码" />
+					<input type="password" id="setNewPsw" class="confirmPsw" placeholder="设置新密码" />
+					<input type="password" id="confirmNewPsw" class="confirmPsw" placeholder="确认新密码" />
+				</div>
+				<button class="confirmBtn clear" type="submit">确定</button>
+			</form>
+		</div>
+	</section>
+<script src="js/jquery-3.2.1.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
