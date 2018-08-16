@@ -302,16 +302,17 @@ input{
 	color:#fff;
 }
 
-.pslInfo_header .container{
+.pslInfo_header .container,
+.pslInfo_mainCon .container{
 	padding:0 0.3rem;
 }
 
 .pslInfo_header .icon
 {
 	width:0.1rem;
-	height:0.08rem;
+	height:0.18rem;
 	position: absolute;
-	top:45%;
+	top:55%;
 	right:0.45rem;
 }
 
@@ -333,12 +334,17 @@ input{
 	background: #E5EBEB;
 }
 
-.pslInfo_mainCon .icon
-{
+.pslInfo_mainCon .icon{
 	width:0.1rem;
-	height:0.08rem;
+	height:0.18rem;
 	position: absolute;
 	right:0.45rem;
+}
+
+.pslInfo_header .icon img,
+.pslInfo_mainCon .icon img{
+	width:100%;
+	height: 100%;
 }
 
 .pslInfo_mainCon .pslInfo_box,
@@ -354,7 +360,7 @@ input{
 
 .pslInfo_mainCon dl{
 	width:100%;
-	padding:2vh 0 5vh;
+	padding:2vh 0.1rem 4.6vh;
 	border-bottom:0.01rem solid #B2B2B2;
 	font-size: 0.14rem;
 }
@@ -366,11 +372,13 @@ input{
 
 .pslInfo_mainCon .homeAdrss dd{
 	float: left;
+	margin-top:0.05rem;
 }
 
 .pslInfo_mainCon dt{
 	color:#97A8AD;
 	float:left;
+	font-weight: 400;
 }
 
 .pslInfo_mainCon dd{
