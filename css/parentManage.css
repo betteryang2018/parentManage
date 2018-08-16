@@ -537,7 +537,7 @@ input{
 	width:94%;
 	height: 1rem;
 	left:0;
-	right:0;
+	right:0.1rem;
 	bottom:-100px;
 	margin:0 auto;
 	z-index: 9999;
