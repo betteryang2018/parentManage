@@ -406,5 +406,93 @@ input{
 	margin-top: 3vh;
 }
 
+/* pslInfo_bind css */
+
+.pslInfoBind_header .container,
+.pslInfoBind_mainCon .container{
+	padding:0 0.3rem;
+}
+
+.pslInfoBind_header{
+	height: 10vh;
+}
+
+.pslInfoBind_header .inputForm{
+	position: relative;
+}
+
+.pslInfoBind_header .searchInt{
+	background: #E5EBEB;
+	height: 0.3rem;
+	border-radius:0.3rem;
+	margin-top: 0.15rem;
+}
+
+.pslInfoBind_header .icon{
+	position: absolute;
+	top:0.19rem;
+	display: block;
+	width:0.16rem;
+	height: 0.16rem;
+}
+
+.pslInfoBind_header .icon img{
+	height: 100%;
+}
+
+.pslInfoBind_header .searchIcon{
+	right:0.35rem;
+}
+
+.pslInfoBind_header .deleteIcon{
+	right:0.1rem;
+}
+
+.pslInfoBind_mainCon{
+	height: 90vh;
+	overflow: auto;
+}
+
+.pslInfoBind_mainCon .headPortrait{
+	width:0.36rem;
+	height: 0.36rem;
+	position: relative;
+}
+
+.pslInfoBind_mainCon .childInfo_content{
+	width:100%;
+	height: 0.8rem;
+	border-bottom: 0.01rem solid #B2B2B2;
+	margin-bottom: 0.2rem;
+}
+
+.pslInfoBind_mainCon .childInfo_content .leftPart{
+	width:90%;
+	float:left;
+}
+
+.pslInfoBind_mainCon  .infoText{
+	float: left;
+	position: relative;
+	top:0.02rem;
+}
+
+.pslInfoBind_mainCon  .infoText h6{
+	margin:0.08rem 0;
+}
+
+.gray{
+	color:#97A8AD;
+}
+
+.pslInfoBind_mainCon .bindBtn{
+	float:left;
+	display: inline-block;
+	width:10%;
+	color:#52B7E3;
+	position: relative;
+	top:0.22rem;
+}
+
 
 
