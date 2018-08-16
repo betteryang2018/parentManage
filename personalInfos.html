@@ -64,7 +64,7 @@
 				</dl>
 			</div>
 		</div>
-		<div class="exitBtn"><a href="#">退出当前账号</a></div>
+		<div class="exitBtn" onclick="exitPopup(this)"><a href="javascript:;" data-toggle="modal" data-target="#myModal">退出当前账号</a></div>
 	</section>
 	<footer class="index_footer">
 		<div class="container">
@@ -90,8 +90,72 @@
 			</ul>
 		</div>
 	</footer>
+<!-- 弹出框 -->
+<!--退出当前账号-->
+<div id="pop-div-1" class="pop-box psl_popDiv">
+    <div class="content-wrap">
+        <div class="popConInner">
+            <div class="popHeader">
+            	<div class="pophdcon">
+	            	<img class="warnIcon" src="images/warning.png">
+	            	<h5>退出当前账号？</h5>
+	            </div>
+            </div>
+            <div class="outContent">
+                <a href="javascript:;" class="exit">是</a>
+				<a href="javascript:;" class="unExit">否</a>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!-- 模态框（Modal）
+<div class="modal fade pslModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            	<img class="warning" src="images/warning.png">
+                <h5 class="modal-title" id="myModalLabel">退出当前账号</h5>
+            </div>
+            <div class="modal-footer">
+            	<div class="exist" data-dismiss="modal">是</div>
+            	<div class="unExist" data-dismiss="modal">否</div>
+            </div>
+        </div>/.modal-content
+    </div>/.modal
+</div> -->
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+	// 退出当前账号弹窗
+	function exitPopup(obj) {
+		$('.exitBtn').unbind("click");
+		var div_obj = $("#pop-div-1");
+	    var posLeft = ($(window).width() - div_obj.width()) / 2;
+	    var posTop = ($(window).height() - 150);
+	    //添加并显示遮罩层
+        $("<div id='mask'></div>").addClass("mask").appendTo("body").fadeIn(200);
+	    //fadeIn() 方法使用淡入效果来显示被选元素
+	    div_obj.css({ "top": posTop, "left": posLeft }).fadeIn();
+	    $('.exit').add('.unExit').click(function(){
+	    	$("#mask").remove();
+	    	$(this).parents('.pop-box').fadeOut();
+	    });
+	    $('.exit').click(function(){
+	    	/*console.log(obj);
+	    	$.ajax({
+	    		url:"#",
+	    		type:"GET",
+	    		data:{"idVal":obj},
+	    		dataType:"json",
+	    		success:function(result){
+	    			
+	    		}
+	    	});*/
+	    })
+
+	}
+</script>
 </body>
 </html>
