@@ -204,6 +204,7 @@ input{
 }
 
 .index_childInfos{
+	width:100%;
 	height: 60vh;
 	line-height: 0.3rem;
 	background: #E5EBEB;
