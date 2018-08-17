@@ -654,7 +654,6 @@ input{
 .appMainPage_content{
 	width:100%;
 	height: 81vh;
-	overflow: auto;
 }
 
 .appMainPage_content .divider{
@@ -746,6 +745,11 @@ input{
 	color:#52B7E3;
 	font-size: 0.11rem;
 	cursor: pointer;
+}
+
+.appMainPage_content .tabbable .tab-content{
+	height: 75vh;
+	overflow: auto;
 }
 
 .appMainPage_footer{
