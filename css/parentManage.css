@@ -708,6 +708,7 @@ input{
 
 .appMainPage_content .appIcon{
 	min-width: 0.41rem;
+	width:17%;
 } 
 
 @media(min-width: 475px){
@@ -751,7 +752,9 @@ input{
 	font-size: 0.11rem;
 }
 
-.appMainPage_content .deleteBtn{
+.appMainPage_content .deleteBtn,
+.appMainPage_content .addBtn
+{
 	width:0.6rem;
 	text-align: right;
 	color:#52B7E3;
@@ -934,6 +937,47 @@ input{
 .addContacts_main .completeBtn{
 	margin-top: 0.4rem;
 }
+
+/*  appBlackList css */
+
+.appBlackList_header{
+	height: 7vh;
+	line-height: 7vh;
+} 
+
+.appBlackList_header .returnBtn{
+	position: absolute;
+	top:0;
+}
+
+.appBlackList_content .blackList_tableTit{
+	font-size: 0.1rem;
+	color:#7D8C92;
+	line-height: 0.2rem;
+	height: 4vh;
+	line-height: 4vh;
+	background: #E5EBEB;
+	margin:0 -7vw;
+	padding:0 7vw;
+}
+
+.appBlackList_content tbody tr:nth-last-child(1){
+	border:0;
+}
+
+.appBlackList_content .allListTable_wrap,
+.appBlackList_content .blackListTable_wrap
+{
+	height: 38.5vh;
+	overflow: auto;
+}
+
+.appBlackList_content .blackListTable_wrap
+{
+	height: 31.5vh;
+	overflow: auto;
+}
+
 
 
 
