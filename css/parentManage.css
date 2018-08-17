@@ -657,14 +657,14 @@ input{
 }
 
 .appMainPage_content .divider{
-	width:100%;
+	width:116vw;
 	border-bottom: 0.04rem solid #E5EBEB;
-	position: relative;
-	top:0.33rem;
+	margin-left: -0.3rem;
 }
 
 .appMainPage_content .nav-tabs{
 	width:1.8rem;
+	height: 5vh;
 	border: 0;
 	margin:0 auto 0.03rem;
 }
@@ -748,7 +748,7 @@ input{
 }
 
 .appMainPage_content .tabbable .tab-content{
-	height: 75vh;
+	height: 74.5vh;
 	overflow: auto;
 }
 
