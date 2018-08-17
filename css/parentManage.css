@@ -654,12 +654,15 @@ input{
 .appMainPage_content{
 	width:100%;
 	height: 81vh;
+	overflow: hidden;
 }
 
 .appMainPage_content .divider{
-	width:116vw;
+	width:100vw;
 	border-bottom: 0.04rem solid #E5EBEB;
-	margin-left: -0.3rem;
+	position: relative;
+	right:0.26rem;
+	overflow: hidden;
 }
 
 .appMainPage_content .nav-tabs{
@@ -748,7 +751,7 @@ input{
 }
 
 .appMainPage_content .tabbable .tab-content{
-	height: 74.5vh;
+	height: 74vh;
 	overflow: auto;
 }
 
