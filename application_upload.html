@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>    
+	<meta name="format-detection" content="telephone=no" /> 
+	<meta http-equiv="Cache-Control" content="no-siteapp"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<meta name="apple-mobile-web-app-title" content="应用上传">
+	<title>应用上传</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/parentManage.css">
+</head>
+<body>
+	<header class="regist_header appUpload_header">
+		<div class="container">
+			<a class="icon returnBtn" href="#"><img src="images/return.png"></a>
+			<h5>应用上传</h5>
+		</div>
+	</header>
+	<section class="appUpload_mainCon">
+		<div class="container">
+			<form id="uploadAppForm" action="registPage_submit" method="get" accept-charset="utf-8">
+				<div class="inputWrap">	
+					<div class="uploadPerson">
+						<label for="uploadPerson_int">上传者</label>
+						<input id="uploadPerson_int" type="text" name="" value="欧阳妈妈" readonly>
+					</div>
+					<div class="appType">
+						<h5>应用类型</h5>
+						<label for="xuexi">学习类</label>
+						<input type="radio" id="xuexi" name="apptype" value="0">
+						<label for="yizhi">益智类</label>
+						<input type="radio" id="yizhi" name="apptype" value="1">
+						<label for="gongju">工具类</label>
+						<input type="radio" id="gongju" name="apptype" value="2">
+					</div>
+					<div class="uploadFile">
+						<h5>上传文件</h5>
+						<label for="uploadApp">
+							<p id="filePathBox">
+								选择文件
+							</p>
+							<div class="fileIcon"><img src="images/uploadfiles.png"></div>
+						</label>
+						<input type="file" id="uploadApp" name="" placeholder="选择文件" onchange="filePath()">
+					</div>
+				</div>
+				<button class="registBtn uploadBtn clear" type="submit">上传</button>
+			</form>
+		</div>
+	</section>
+<script src="js/jquery-3.2.1.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+<script>
+
+// 获取file表单的路径	
+function filePath(){
+ var file=document.getElementById("uploadApp").files[0];
+ $('#filePathBox').text(file['name']);
+}
+</script>
+</body>
+</html>

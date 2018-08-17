@@ -585,82 +585,322 @@ input{
 	border-left:1px solid #B2B2B2;
 }
 
+/* application css  */
+
+.appMainPage_header .container,
+.appMainPage_content .container,
+.appMainPage_footer .container{
+	padding:0 7vw;
+}
+
+.appMainPage_header{
+	height: 8vh;
+	padding-top: 0.2rem;
+}
+
+.appMainPage_header .inputForm{
+	width:75%;
+	position: relative;
+	float:left;
+}
+
+.appMainPage_header .inputForm .searchInt{
+	border: 0;
+	border-radius: 0;
+	border-bottom:1px solid #B2B2B2;
+	height: 0.23rem;
+	padding-left: 0.15rem;
+}
+
+.appMainPage_header .icon{
+	display: inline-block;
+	width:0.15rem;
+	height: 0.15rem;
+}
+
+.appMainPage_header .icon img{
+	height:100%;
+}
+
+.appMainPage_header .inputForm .searchIcon{
+	position: absolute;
+	top:0;
+	right:0.25rem;
+}
+
+.appMainPage_header .inputForm .deleteIcon{
+	position: absolute;
+	top:0;
+	right:0.02rem;
+}
+
+.appMainPage_header .uploadBox{
+	width:0.63rem;
+	position: relative;
+	top:0.05rem;
+	float:right;
+	text-align: right;
+}
+
+.appMainPage_header .uploadBox .uploadIcon{
+	width:0.3rem;
+	height: 0.3rem;
+	padding:0.08rem;
+	position: absolute;
+	left:0.03rem;
+	top:-0.1rem;
+}
+
+.appMainPage_content{
+	width:100%;
+	height: 81vh;
+	overflow: auto;
+}
+
+.appMainPage_content .divider{
+	width:100%;
+	border-bottom: 0.04rem solid #E5EBEB;
+	position: relative;
+	top:0.33rem;
+}
+
+.appMainPage_content .nav-tabs{
+	width:1.8rem;
+	border: 0;
+	margin:0 auto 0.03rem;
+}
+
+@media(min-width: 375px){
+.appMainPage_content .nav-tabs{
+	width:1.6rem;
+}
+
+}
+
+.appMainPage_content .nav>li>a {
+    padding: 3px;
+}
+
+.appMainPage_content .nav>li>a:hover{
+	border-color: transparent;
+	border-radius: 0;
+}
+
+.appMainPage_content .nav-tabs>li.active>a, .appMainPage_content .nav-tabs>li.active>a:focus, .appMainPage_content .nav-tabs>li.active>a:hover {
+	border:0;
+	border-bottom: 2px solid #52B7E3;
+}
+
+.appMainPage_content .nav-tabs .myupload{
+	margin-right: 0.3rem;
+}
+
+.appMainPage_content .appIcon{
+	min-width: 0.41rem;
+} 
+
+@media(min-width: 475px){
+.appMainPage_content .appIcon{
+	width:10%;
+} 
+}
+
+.appMainPage_content .appIcon img{
+	width:0.41rem;
+	height: 0.41rem;
+}
+
+.appMainPage_content table{
+	width:100%;
+}
+
+.appMainPage_content tbody tr{
+	border-bottom: 1px solid #B2B2B2;
+}
+
+.appMainPage_content tbody td{
+	padding:0.05rem;
+	height: 10vh;
+}
+
+.appMainPage_content .appName{
+	width:45%;
+	font-size: 0.12rem;
+}
+
+.appMainPage_content .appName small{
+	color:#97A8AD;
+	font-size: 0.09rem;
+}
+
+.appMainPage_content .appType{
+	width:20%;
+	text-align: right;
+	color:#97A8AD;
+	font-size: 0.11rem;
+}
+
+.appMainPage_content .deleteBtn{
+	width:0.6rem;
+	text-align: right;
+	color:#52B7E3;
+	font-size: 0.11rem;
+	cursor: pointer;
+}
+
+.appMainPage_footer{
+	height: 10vh;
+	border-top: 1px solid #92A2A8;
+	box-sizing:border-box;
+}
+
+/* application_upload css */
 
 
+.appUpload_mainCon .container{
+	padding:0 8vw;
+	color: #97A8AD;
+}
 
+.appUpload_mainCon label{
+	font-weight: 400;
+}
 
+.appUpload_mainCon .inputWrap .uploadPerson{
+	position: relative;
+}
 
+.appUpload_mainCon .inputWrap .uploadPerson label{
+	position: absolute;
+	top:0.125rem;
+	left:0.03rem;
+}
 
+.appUpload_mainCon .inputWrap .uploadPerson #uploadPerson_int{
+	border:0;
+	border-radius: 0;
+	border-bottom: 1px solid #B2B2B2;
+	padding-left: 0.7rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 退出登入模态框 */
-
-/* .pslModal{
+.appUpload_mainCon .inputWrap .appType,
+.appUpload_mainCon .inputWrap .uploadFile
+{
 	text-align: center;
+	position: relative;
 }
 
-.pslModal .modal-header{
-	width:1.5rem;
-	margin:0 auto;
-
+.appUpload_mainCon h5{
+	color:#333;
+	margin:0.15rem 0 0.15rem 0.05rem;
+	text-align: left;
 }
 
-.pslModal .modal-header .warning{
+.appUpload_mainCon .inputWrap .appType input{
+	display: none;
+}
+
+.appUpload_mainCon .inputWrap .appType label{
+	width:28%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	border:1px solid #B2B2B2;
+	border-radius: 4px;
+	text-align: center;
+	margin:2%;
+}
+
+.appUpload_mainCon .inputWrap .uploadFile{
+	margin:0.5rem 0 0.7rem;
+}
+
+.appUpload_mainCon .inputWrap .uploadFile input{
+	display: none;
+}
+.appUpload_mainCon .inputWrap .uploadFile label{
+	position: relative;
+	width:100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	border:1px solid #B2B2B2;
+	border-radius: 4px;
+	text-align: left;
+	padding-left:0.1rem;
+}
+
+.appUpload_mainCon .inputWrap .uploadFile label p{
+	float:left;
+	width:80%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;  /*强制不换行*/
+}
+
+.appUpload_mainCon .inputWrap .uploadFile label .fileIcon{
+	float:right;
+	width:0.45rem;
+	height: 100%;
+	border-left:1px solid #B2B2B2;
+}
+
+.appUpload_mainCon .inputWrap .uploadFile label img{
+	position: absolute;
+	right:0.08rem;
+	top:0.08rem;
 	width:0.25rem;
-	height: 0.2rem;
-	float:left;
-	margin-right: 0.1rem;
+	height: 0.22rem;
 }
 
-.pslModal .modal-header h5{
-	float:left;
-	line-height: 0.25rem;
-}
- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

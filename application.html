@@ -13,41 +13,173 @@
 	<link rel="stylesheet" type="text/css" href="css/parentManage.css">
 </head>
 <body>
-	<header class="pslInfoBind_header">
+	<header class="appMainPage_header">
 		<div class="container">
 			<div class="inputForm">
 				<input class="searchInt" type="search" name="" value="" placeholder="搜索">
 				<a class="icon searchIcon" href="#"><img src="images/search.png"></a>
 				<a class="icon deleteIcon" href="#"><img src="images/delete.png"></a>
 			</div>
+			<div class="uploadBox">
+				<a class="icon uploadIcon" href="#"><img src="images/upload.png"></a>
+				<p>上传</p>
+			</div>
 		</div>
 	</header>
-	<section class="pslInfoBind_mainCon">
+	<section class="appMainPage_content">
+		<div class="divider"></div>
 		<div class="container">
-			<div class="childInfo_content">
-				<div class="leftPart">
-					<div class="headPortrait"><a><img src="images/headportrait.png"></a></div>
-					<div class="infoText">
-						<h5>刘晓峰<small>（20170701125）</small></h4>
-						<h6>五年级（ 一）班 </h6>
-						<h6 class="gray">广东省东莞市横沥镇中心小学</h6>
-					</div>
-				</div>
-				<a class="bindBtn" href="#">绑定</a>
-			</div>
-			<div class="childInfo_content">
-				<div class="leftPart">
-					<div class="headPortrait"><a><img src="images/headportrait.png"></a></div>
-					<div class="infoText">
-						<h5>欧阳娜娜<small>（20180701152）</small></h5>
-						<h6>三年级（ 一）班 </h6>
-						<h6 class="gray">广东省东莞市松山湖区实验小学</h6>
-					</div>
-				</div>
-				<a class="bindBtn" href="#">绑定</a>
+			<!--标签页式导航-->
+			<div class="tabbable"> <!-- Only required for left/right tabs -->
+			  <ul class="nav nav-tabs">
+			    <li class="active myupload"><a href="#tab1" data-toggle="tab">我的上传</a></li>
+			    <li><a href="#tab2" data-toggle="tab">所有上传</a></li>
+			  </ul>
+			  <div class="tab-content">
+			    <div class="tab-pane active" id="tab1">
+			      <table>
+			      	<tbody>
+			      		<tr>
+			      			<td class="appIcon"><img src="images/p1.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr>
+			      		<tr>
+			      			<td class="appIcon"><img src="images/p2.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr><tr>
+			      			<td class="appIcon"><img src="images/p1.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr>
+			      		<tr>
+			      			<td class="appIcon"><img src="images/p2.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr><tr>
+			      			<td class="appIcon"><img src="images/p1.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr>
+			      		<tr>
+			      			<td class="appIcon"><img src="images/p2.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr><tr>
+			      			<td class="appIcon"><img src="images/p1.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr>
+			      		<tr>
+			      			<td class="appIcon"><img src="images/p2.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr><tr>
+			      			<td class="appIcon"><img src="images/p1.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr>
+			      		<tr>
+			      			<td class="appIcon"><img src="images/p2.png"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr>
+			      	</tbody>
+			      </table>
+			    </div>
+			    <div class="tab-pane" id="tab2">
+			      <table>
+			      	<tbody>
+			      		<tr>
+			      			<td class="appIcon"><img src="images/test1.jpg"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr>
+			      		<tr>
+			      			<td class="appIcon"><img src="images/test2.jpg"></td>
+			      			<td class="appName">
+			      				Microsoft Word...
+			      				<small>1.2.306.256.32</small>
+			      			</td>
+			      			<td class="appType">益智类</td>
+			      			<td class="deleteBtn">删除</td>
+			      		</tr>
+			      	</tbody>
+			      </table>
+			    </div>
+			  </div>
 			</div>
 		</div>
 	</section>
+	<footer class="index_footer appMainPage_footer">
+		<div class="container">
+			<ul class="row">
+				<li class="col-xs-4 col-sm-4 col-lg-4">
+					<a class="icon" href="#">
+						<img src="images/binding_2.png">
+						<p>绑定</p>
+					</a>
+				</li>
+				<li class="col-xs-4 col-sm-4 col-lg-4">
+					<a class="icon" href="#">
+						<img src="images/application_2.png">
+						<p>应用</p>
+					</a>
+				</li>
+				<li class="col-xs-4 col-sm-4 col-lg-4">
+					<a class="icon" href="#">
+						<img src="images/user_2.png">
+						<p>我</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
