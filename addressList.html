@@ -34,7 +34,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 			<li class="childInfo_content addressList_content">
@@ -47,7 +47,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>			
 			<li class="childInfo_content addressList_content">
@@ -60,7 +60,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 			<li class="childInfo_content addressList_content">
@@ -73,7 +73,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 			<li class="childInfo_content addressList_content">
@@ -86,7 +86,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 			<li class="childInfo_content addressList_content">
@@ -99,7 +99,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 			<li class="childInfo_content addressList_content">
@@ -112,7 +112,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 			<li class="childInfo_content addressList_content">
@@ -125,7 +125,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 			<li class="childInfo_content addressList_content">
@@ -138,7 +138,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 			<li class="childInfo_content addressList_content">
@@ -151,7 +151,7 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 			<li class="childInfo_content addressList_content">
@@ -164,14 +164,64 @@
 				</div>
 				<div class="rightPart">
 					<a class="modifyBtn blue" href="#">修改</a>
-					<a class="deleteBtn" href="#">删除</a>
+					<a class="deleteBtn" href="#" onclick="deletePopup(this)">删除</a>
 				</div>
 			</li>
 		</ul>
 	</section>
 	<footer class="pslInfoBind_footer"></footer>
 
+<!-- 弹出框 -->
+<!--删除联系人-->
+<div id="pop-div-1" class="pop-box psl_popDiv">
+    <div class="content-wrap">
+        <div class="popConInner">
+            <div class="popHeader">
+            	<div class="pophdcon">
+	            	<img class="warnIcon" src="images/warning.png">
+	            	<h5>删除联系人？</h5>
+	            </div>
+            </div>
+            <div class="outContent">
+                <a href="javascript:;" class="exit">是</a>
+				<a href="javascript:;" class="unExit">否</a>
+            </div>
+        </div> 
+    </div>
+</div>		
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+	// 删除联系人弹窗
+	function deletePopup(obj) {
+		$('.exitBtn').unbind("click");
+		var div_obj = $("#pop-div-1");
+	    var posLeft = ($(window).width() - div_obj.width()) / 2;
+	    var posTop = ($(window).height() - 150);
+	    //添加并显示遮罩层
+        $("<div id='mask'></div>").addClass("mask").appendTo("body").fadeIn(200);
+	    //fadeIn() 方法使用淡入效果来显示被选元素
+	    $
+	    div_obj.css({ "top": posTop, "left": posLeft }).fadeIn();
+	    $('.exit').add('.unExit').click(function(){
+	    	$("#mask").remove();
+	    	$(this).parents('.pop-box').fadeOut();
+	    });
+	    $('.exit').click(function(){
+	    	/*console.log(obj);
+	    	$.ajax({
+	    		url:"#",
+	    		type:"GET",
+	    		data:{"idVal":obj},
+	    		dataType:"json",
+	    		success:function(result){
+	    			
+	    		}
+	    	});*/
+	    })
+
+	}
+</script>
 </body>
 </html>

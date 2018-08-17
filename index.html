@@ -47,7 +47,7 @@
 						</a>
 					</li>
 					<li class="col-xs-3 col-sm-3 col-lg-3">
-						<a class="icon" href="#">
+						<a class="icon" href="#" onclick="untiePopup(this)">
 							<img src="images/untie.png">
 							<p>解绑</p>
 						</a>
@@ -83,7 +83,7 @@
 						</a>
 					</li>
 					<li class="col-xs-3 col-sm-3 col-lg-3">
-						<a class="icon" href="#">
+						<a class="icon" href="#" onclick="untiePopup(this)">
 							<img src="images/untie.png">
 							<p>解绑</p>
 						</a>
@@ -119,7 +119,7 @@
 						</a>
 					</li>
 					<li class="col-xs-3 col-sm-3 col-lg-3">
-						<a class="icon" href="#">
+						<a class="icon" href="#" onclick="untiePopup(this)">
 							<img src="images/untie.png">
 							<p>解绑</p>
 						</a>
@@ -155,7 +155,7 @@
 						</a>
 					</li>
 					<li class="col-xs-3 col-sm-3 col-lg-3">
-						<a class="icon" href="#">
+						<a class="icon" href="#" onclick="untiePopup(this)">
 							<img src="images/untie.png">
 							<p>解绑</p>
 						</a>
@@ -189,7 +189,57 @@
 		</div>
 	</footer>
 
+<!-- 弹出框 -->
+<!--解绑-->
+<div id="pop-div-1" class="pop-box psl_popDiv">
+    <div class="content-wrap">
+        <div class="popConInner">
+            <div class="popHeader">
+            	<div class="pophdcon">
+	            	<img class="warnIcon" src="images/warning.png">
+	            	<h5>确定解绑？</h5>
+	            </div>
+            </div>
+            <div class="outContent">
+                <a href="javascript:;" class="exit">是</a>
+				<a href="javascript:;" class="unExit">否</a>
+            </div>
+        </div> 
+    </div>
+</div>			
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+	// 解绑弹窗
+	function untiePopup(obj) {
+		$('.exitBtn').unbind("click");
+		var div_obj = $("#pop-div-1");
+	    var posLeft = ($(window).width() - div_obj.width()) / 2;
+	    var posTop = ($(window).height() - 150);
+	    //添加并显示遮罩层
+        $("<div id='mask'></div>").addClass("mask").appendTo("body").fadeIn(200);
+	    //fadeIn() 方法使用淡入效果来显示被选元素
+	    $
+	    div_obj.css({ "top": posTop, "left": posLeft}).fadeIn();
+	    $('.exit').add('.unExit').click(function(){
+	    	$("#mask").remove();
+	    	$(this).parents('.pop-box').fadeOut();
+	    });
+	    $('.exit').click(function(){
+	    	/*console.log(obj);
+	    	$.ajax({
+	    		url:"#",
+	    		type:"GET",
+	    		data:{"idVal":obj},
+	    		dataType:"json",
+	    		success:function(result){
+	    			
+	    		}
+	    	});*/
+	    })
+
+	}
+</script>
 </body>
 </html>

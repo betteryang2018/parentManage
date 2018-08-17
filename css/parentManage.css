@@ -904,6 +904,29 @@ input{
     height: 0.65rem;
 }
 
+.addressList_mainCon .addressList_content h6{
+	font-size: 0.1rem;
+}
+
+/* addressList_addContacts  css */
+
+.addContacts_main .addPortrait_wrap{
+	text-align: center;
+	margin:0.5rem 0 0.3rem;
+}
+
+.addContacts_main .addPortrait_wrap label{
+	width:0.86rem;
+	height: 0.86rem;
+}
+
+.addContacts_main #addPortrait{
+	display: none;
+}
+
+.addContacts_main .completeBtn{
+	margin-top: 0.4rem;
+}
 
 
 
