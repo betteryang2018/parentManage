@@ -869,6 +869,14 @@ input{
 
 /* 通讯录 */
 
+.index_popDiv .popHeader .pophdcon{
+	width:1.2rem;
+}
+
+.addressList_popDiv .popHeader .pophdcon{
+	width:1.3rem;
+}
+
 .addressList_content .headPortrait{
 	width:0.49rem;
 	height: 0.49rem;
