@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>    
+	<meta name="format-detection" content="telephone=no" /> 
+	<meta http-equiv="Cache-Control" content="no-siteapp"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<meta name="apple-mobile-web-app-title" content="添加时间段">
+	<title>添加时间段</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/parentManage.css">
+</head>
+<body>
+	<header class="regist_header addTimeLimit_header">
+		<div class="container">
+			<a href="#" class="icon returnBtn"><img src="images/return.png"></a>
+			<h5>添加时间段</h5>
+		</div>
+	</header>
+	<section class="addTimeLimit_content">
+		<div class="container">
+			<div class="weekDay_box">
+				<ul class="">
+					<li class="active">星期一</li>
+					<li>星期二</li>
+					<li>星期三</li>
+					<li>星期四</li>
+					<li>星期五</li>
+					<li>星期六</li>
+					<li>星期日</li>
+					<li class="everyDay">每天</li>
+				</ul>
+			</div>
+			<div class="timeInterval_box">
+				<div class="timeStart clear">
+					<div class="timeControl">
+						<span class="timeStartTit">开始时间：</span>
+						<input type="text" id="startTime" value="13:59">
+						<label for="startTime" class="caretdown"><img src="images/caretdown.png"></label>
+					</div>
+				</div>
+				<div class="timeEnd clear">
+					<div class="timeControl">
+						<span class="timeEndTit">结束时间：</span>
+						<input type="text" id="endTime" value="13:59">
+						<label for="endTime"class="caretdown"><img src="images/caretdown.png"></label>
+					</div>
+				</div>
+			</div>
+			<button class="confirmBtn clear" type="submit">确定</button>
+		</div>    
+	</section>	
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/laydate/laydate.js"></script>
+<script>
+laydate.render({
+  elem: '#startTime',
+  type:'time',
+  show: true //直接显示
+  ,theme: '#52B7E3'
+  ,format: 'HH:mm' //可任意组合
+  ,btns: ['confirm']
+});
+
+laydate.render({
+  elem: '#endTime',
+  type:'time',
+  theme: '#52B7E3'
+  ,format: 'HH:mm' //可任意组合
+  ,btns: ['confirm']
+});
+</script>
+</body>
+</html>

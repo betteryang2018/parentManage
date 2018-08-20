@@ -183,7 +183,8 @@ input{
 .regist_header{
 	position: relative;
 	width:100%;
-	height: 0.45rem;
+	height: 7vh;
+	line-height: 7vh;
 	color:#fff;
 	background:#52B7E3;
 	text-align: center;
@@ -191,7 +192,7 @@ input{
 
 .regist_header h5{
 	line-height: 0.5rem;
-	font-size: 0.16rem;
+	font-size: 0.15rem;
 }
 
 .regist_header .returnBtn{
@@ -199,7 +200,6 @@ input{
 	width:0.3rem;
 	height: 0.3rem;
 	position: absolute;
-	top:0.1rem;
 	left:0.2rem;
 }
 
@@ -758,6 +758,7 @@ input{
 	width:0.6rem;
 	text-align: right;
 	color:#52B7E3;
+	font-size: 0.14rem;
 	cursor: pointer;
 }
 
@@ -977,6 +978,141 @@ input{
 	height: 31.5vh;
 	overflow: auto;
 }
+
+/* timeLimit css */
+
+.timeLimit_header .addBtn{
+	position: absolute;
+	top:0.03rem;
+	right:7vw;
+	width:0.15rem;
+	height:0.15rem;
+}
+
+.timeLimit_header .addBtn img{
+	width: 100%;
+	height: 100%;
+}
+
+.timeLimit_content .tipsText{
+	color:#97A8AD;
+	font-size: 0.12rem;
+	padding:0.3rem 0.1rem;
+	border-bottom: 1px solid #B2B2B2;
+}
+
+.timeLimit_content tbody td{
+	height: 9vh;
+}
+
+.timeLimit_content{
+	height: 85vh;
+	overflow: auto;
+}
+
+/* addTimeLimit css */
+
+.addTimeLimit_content{
+	height: 83vh;
+}
+
+.addTimeLimit_content .container{
+	padding:0 7vw;
+}
+
+#layui-laydate1 .layui-laydate-header,
+#layui-laydate2 .layui-laydate-header
+ {
+    display: none;
+}
+
+.layui-laydate-list>li:nth-last-child(1){
+	display: none;
+}
+
+.layui-laydate-list{
+	overflow: hidden;
+}
+
+.layui-laydate-list>li{
+	width:50%;
+}
+
+.layui-laydate-content table tr:nth-child(1){
+	display: none;
+}
+
+.addTimeLimit_content .weekDay_box{
+	width:87vw;
+	height: 32vw;
+	margin:0.3rem auto 0.2rem;
+	border-bottom: 1px solid #B2B2B2;
+}
+
+.addTimeLimit_content .weekDay_box ul li{
+	float:left;
+	color:#97A8AD;
+	border:1px solid #B2B2B2;
+	width: 20vw;
+	padding:2vw;
+	margin: 2vw 0.8vw;
+	text-align: center;
+	font-size: 0.13rem;
+	border-radius: 2px;
+}
+
+.addTimeLimit_content .weekDay_box ul .active{
+	background:#52B7E3;
+	color:#fff;
+}
+
+.addTimeLimit_content .timeInterval_box{
+	width:70vw;
+	margin:0 auto;
+}
+
+.addTimeLimit_content .timeInterval_box .timeStart,
+.addTimeLimit_content .timeInterval_box .timeEnd{
+	height: 8vw;
+	margin-top: 10vw;
+}
+
+.addTimeLimit_content .timeControl{
+	position: relative;
+}
+
+.addTimeLimit_content .timeControl .caretdown{
+	position: absolute;
+	top:0.05rem;
+	right:0.1rem;
+	width:0.14rem;
+	height: 0.14rem;
+}
+
+.addTimeLimit_content .timeInterval_box .timeStartTit,
+.addTimeLimit_content .timeInterval_box .timeEndTit
+{
+	width:20vw;
+	float:left;
+	line-height: 0.34rem;
+	color:#97A8AD;
+	font-size: 0.14rem;
+}
+
+.addTimeLimit_content .timeInterval_box input{
+	width:50vw;
+	border-radius: 2px;
+	height: 0.34rem;
+	float:left;
+}
+
+.addTimeLimit_content .confirmBtn{
+	margin-top: 20vw;
+}
+
+
+
+
 
 
 
