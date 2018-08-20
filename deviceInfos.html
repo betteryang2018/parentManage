@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>    
+	<meta name="format-detection" content="telephone=no" /> 
+	<meta http-equiv="Cache-Control" content="no-siteapp"> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<meta name="apple-mobile-web-app-title" content="设备">
+	<title>设备</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/parentManage.css">
+</head>
+<body>
+	<header class="regist_header deviceInfos_header">
+		<div class="container">
+			<a class="icon returnBtn" href="#"><img src="images/return.png"></a>
+			<h5>设备</h5>
+		</div>
+	</header>
+	<section class="deviceInfos_content">
+		<div class="container">
+			<ul class="controlBox clear">
+				<li class="clear">
+					<div class="control_tit">
+						<span>设备护眼距离设置</span>
+						<div class="switch" onclick="switchFun(this);">
+							<input class="switchInt" type="hidden" id="distance" th:value="${distance}" name="" value="2">
+							<span class="slider round">
+							</span>
+						</div>
+					</div>
+					<div class="control_con">
+						<span class="control_conTit">保持</span>
+						<input id="distanceNum" type="text" value="10" name="" readonly="readonly">
+						<i>CM</i>
+						<span class="modifyBtn">修改</span>
+					</div>
+				</li>
+				<li>
+					<div class="control_tit">
+						<span>设备流量使用限定</span>
+						<div class="switch" onclick="switchFun(this);">
+							<input class="switchInt" type="hidden" id="limitMB" th:value="${limitMB}" name="" value="2">
+							<span class="slider round">
+							</span>
+						</div>
+					</div>
+					<div class="control_con clear">
+						<span class="control_conTit">限定</span>
+						<input id="mbNum" type="text" value="500" name="" readonly="readonly">
+						<i>MB</i>
+						<span class="modifyBtn">修改</span>
+					</div>
+				</li>
+				<li>
+					<div class="control_tit">
+						<span>是否开启定位</span>
+						<div class="switch" onclick="switchFun(this);" style="background: rgb(82, 183, 227);">
+							<input class="switchInt" type="hidden" id="locationState" th:value="${locationState}" name="" value="1">
+							<span class="slider round">
+							</span>
+						</div>
+					</div>
+					<div class="control_con">
+						<span class="control_conTit">间隔</span>
+						<input id="spaceTime" type="text" value="10" name="">
+						<i>分钟</i>
+						<span class="modifyBtn">修改</span>
+					</div>
+				</li>
+				<li>
+					<div class="control_tit">
+						<span class="control_conTit">是否接听陌生人电话</span>
+						<div class="switch" onclick="switchFun(this);" style="background: rgb(82, 183, 227);">
+							<input class="switchInt" type="hidden" id="acceptTel" th:value="${acceptTel}" name="" value="1">
+							<span class="slider round">
+							</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="operate_box">
+				<dl>
+					<dt>查看定位</dt>
+					<dd><a href="#" class="icon"><img src="images/rtArrow_1.png"></a></dd>
+				</dl>
+				<dl class="addBind">
+					<dt>默认应用管理</dt>
+					<dd><a href="#" class="icon"><img src="images/rtArrow_1.png"></a></dd>
+				</dl>
+			</div>
+			<div class="deviceInfos_box">
+				<ul>
+					<li>
+						<div class="titTxt">品牌名称</div>
+						<div class="valTxt">Amdox</div>
+					</li>
+					<li>
+						<div class="titTxt">设备型号</div>
+						<div class="valTxt">SW-101IP</div>
+					</li>
+					<li>
+						<div class="titTxt">IMEI</div>
+						<div class="valTxt">358624586666</div>
+					</li>
+					<li>
+						<div class="titTxt">IP地址</div>
+						<div class="valTxt">00:25:25:32</div>
+					</li>
+					<li>
+						<div class="titTxt">MAC地址</div>
+						<div class="valTxt">00-01-6C-06-A6-29</div>
+					</li>
+					<li>
+						<div class="titTxt">Amdox版本</div>
+						<div class="valTxt">10.25</div>
+					</li>
+					<li>
+						<div class="titTxt">Android版本</div>
+						<div class="valTxt">1.20.25.2356</div>
+					</li>
+					<li>
+						<div class="titTxt">当前网络状态</div>
+						<div class="valTxt">WIFI</div>
+					</li>
+				</ul>
+			</div>
+		</div>    
+	</section>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
