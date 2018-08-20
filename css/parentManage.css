@@ -1262,8 +1262,11 @@ input{
 
 .dvcPosition_content{
 	height: 86vh;
-	margin:0 -7vw;
 	overflow: auto;
+}
+
+.dvcPosition_content .container{
+	padding: 0 7vw;
 }
 
 .dvcPosition_content ul li{
