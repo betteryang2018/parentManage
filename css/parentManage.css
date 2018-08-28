@@ -1288,6 +1288,72 @@ input{
 	font-size: 0.14rem;
 }
 
+/* 权限设置页面 */
+
+.setPower_content .tipsText{
+	color:#97A8AD;
+	font-size: 0.12rem;
+	padding:0.25rem 0.1rem;
+	border-bottom: 1px solid #B2B2B2;
+}
+
+.setPower_content .controlBox li{
+	border-bottom:1px solid #B2B2B2;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	padding:0 0.05rem;
+}
+
+.setPower_content .controlBox, .setPower_content .controlBox a{
+	color:#97A8AD;
+	font-size: 0.14rem;
+}
+
+.setPower_content .controlBox .listItem span{
+	float:left;
+}
+
+.setPower_content .controlBox .detailBtn{
+	float:right;
+}
+
+.setPower_content .controlBox .listItem .roundBtn {
+	display: block;
+    border: 2px solid #9FAEB3;
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    float: left;
+    position: relative;
+    top:0.13rem;
+    cursor: pointer;
+    margin-right:0.12rem;
+}
+
+.setPower_content .controlBox .active .listItem{
+	color:#333;
+	font-weight:bold;
+}
+
+.setPower_content .controlBox .active .roundBtn{
+	border: 2px solid #52B7E3;
+}
+
+.setPower_content .controlBox .active .sltCircle {
+    width: 2px;
+    height: 2px;
+    border: 2px solid #52B7E3;
+    border-radius: 2px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.setPower_content .controlBox .active .detailBtn{
+	color:#52B7E3;
+}
 
 
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="权限设置">
+    <title>权限设置</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/parentManage.css">
+</head>
+<body>
+    <header class="regist_header setPower_header">
+        <div class="container">
+            <a href="#" class="icon returnBtn"><img src="images/return.png"></a>
+            <h5>策略列表</h5>
+        </div>
+    </header>
+
+    <section class="appMainPage_content setPower_content">
+        <div class="container">
+            <div class="tipsText">
+                <p>温馨提示:权限管理策略分为以下三套方案，选择其中之一即可生效，进入详情页面可对策略进行个性化设置。</p>
+            </div>
+            <ul class="controlBox clear">
+                    <li class="whiteList active">
+                        <div class="listItem">
+                            <span class="roundBtn">
+                                <span class="sltCircle"></span>
+                            </span>
+                            <span>应用白名单</span>
+                        </div>
+                        <a class="detailBtn" href="setPower_whiteList.html">详情</a>
+                        <input type="hidden" value="1" name="whiteList"  id="whiteList"/>
+                    </li>
+                    <li>
+                        <div class="listItem">
+                            <span class="roundBtn">
+                                <span class="sltCircle"></span>
+                            </span>
+                            <span class="listCon">应用黑名单</span>
+                        </div>
+                        <a class="detailBtn" href="setPower_blackList.html">详情</a>
+                        <input type="hidden" value="2" name="blackList"  id="blackList"/>
+                    </li>
+                    <li>
+                        <div class="listItem">
+                            <span class="roundBtn">
+                                <span class="sltCircle"></span>
+                            </span>
+                            <span class="listCon">时间限制</span>
+                        </div>
+                        <a class="detailBtn" href="setPower_timeLimit.html">详情</a>
+                        <input type="hidden" value="3" name="timeLimit" id="timeLimit"/>
+                    </li>
+                </ul>
+        </div>    
+    </section>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
